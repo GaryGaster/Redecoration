@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+</head>
+<body>
+
+<!-- Banner-Section -->
+    <section class="banner">
+        <div class="gradient"></div>
+        <!-- Container -->
+        <div class="container h-100 d-flex">
+            <div class="jumbotron my-auto ml-auto" data-aos="fade-right" data-aos-duration="600">
+                <h1>Skontaktuj się z nami</h1>
+                <!-- Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group row">
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" name='name' placeholder="Imię i nazwisko" required>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="email" class="form-control" name='email' placeholder="Adres email" required>
+                                </div>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" name='subject' placeholder="Temat">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <textarea type="text" class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
+                                </div>
+                            </div>
+                            <span>LUB ZADZWOŃ <a href="#">579 970 851</a></span>
+                            <button type="submit" class="btn btn-primary">WYŚLIJ</button>
+                        </form>
+                    </div>
+                </div>
+                <!--/. Grid row-->
+            </div>
+        </div>
+            <!-- /. Container -->
+        </div>
+    </section>
+
+</body>
+</html>
