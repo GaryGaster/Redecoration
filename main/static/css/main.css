@@ -204,10 +204,15 @@ hr {
     width: 100%;
     height: auto;
     position: relative;
-    background-image: url(../images/banner-bg.jpg);
+    background-image: url(../images/banner-home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+}
+.banner-contact {
+    background-image: url(../images/banner-contact.jpg);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .banner .gradient {
@@ -221,6 +226,7 @@ hr {
     background: linear-gradient(to right, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80ffffff', endColorstr='#80ffffff', GradientType=1);
 }
+
 
 .jumbotron {
     color: #000000;
@@ -835,6 +841,9 @@ hr {
     font-size: 16px !important;
     color: #ffffff;
     /* Change testimonial paragraph text color */
+}
+.list-of-services {
+    padding: 25px;
 }
 
 .list-of-services ul {

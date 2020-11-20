@@ -4,5 +4,5 @@ from .views import home, send_order_enquiry
 
 urlpatterns = [
     path('', home, name='home'),
-    path('contact/', send_order_enquiry),
+    path('contact/', send_order_enquiry, name='contact'),
 ]
