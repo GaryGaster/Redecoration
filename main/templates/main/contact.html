@@ -5,59 +5,64 @@
 {% block content %}
 
 <!-- Banner-Section -->
-<section class="banner banner-contact">
+<section class="another">
     <div class="gradient"></div>
     <!-- Container -->
     <div class="container h-100 d-flex">
         <div class="jumbotron my-auto ml-auto" data-aos="fade-right" data-aos-duration="600">
-            <h1>Skontaktuj się z nami</h1>
             <!-- Grid row-->
             <div class="row">
-                <div class="col-lg-12">
-                    <form method="post">
-                        {% csrf_token %}
-                        <div class="form-group row">
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" name='name' placeholder="Imię i/lub nazwisko" required>
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="email" class="form-control" name='email' placeholder="Adres email" required>
+                <div class="col-lg-12 my-auto ml-auto text-info" data-aos="fade-left" data-aos-duration="600">
+                    <h1>Usługi Remontowo-Budowlane<br/> Bartosz Marcićkiewicz</h1>
+                    <p>E-mail: bartosz.marcickiewicz@gmail.com</p>
+                    <p>_______________________________________________</p>
+                    <p>REGON: 387281200</p>
+                    <p>NIP: 8172121449</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                        <div class="col-sm-6 part-left">
+                            <h2>Skontaktuj się znami</h2>
+                        </div>
+                            <div class="col-sm-6 part-right">
+                                <h2>ZADZWOŃ <span><a href="#">739 972 162</a></span></h2>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" name='subject' placeholder="Temat (opcjonalnie)">
+                        <form method="post">
+                            {% csrf_token %}
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name='name' placeholder="Imię i/lub nazwisko" required>
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="email" class="form-control" name='email' placeholder="Adres email" required>
+                                </div>
                             </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control" name='number' placeholder="Telefon (opcjonalnie)">
+                            <div class="form-group row">
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name='subject' placeholder="Temat (opcjonalnie)">
+                                </div>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" name='number' placeholder="Telefon (opcjonalnie)">
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-12">
-                                <textarea type="text" class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
+                            <div class="form-group row">
+                                <div class="col-sm-12">
+                                    <textarea type="text" class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <span>LUB ZADZWOŃ <a href="#">739 972 162</a></span>
-                        <button type="submit" class="btn btn-primary">WYŚLIJ</button><br/>
-                        <input type="checkbox" required>
-                        <small>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych<br/>
-                            w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,<br/>
-                            ale niezbędne do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu<br/>
-                            do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem<br/>
-                            danych osobowych jest firma Usługi remontowo-budowlane Bartosz Marcićkiewicz</small>
-                    </form>
+                            <button type="submit" class="btn btn-primary">WYŚLIJ</button><br/>
+                            <input type="checkbox" required>
+                            <small>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych
+                                w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,
+                                ale niezbędne do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi <br/> prawo dostępu
+                                do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem
+                                danych osobowych jest firma <br/> Usługi remontowo-budowlane Bartosz Marcićkiewicz</small>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-            <div class="col-lg-12 jumbotron my-auto ml-auto" data-aos="fade-left" data-aos-duration="600" style="float: left;">
-
-                <h1>Usługi Remontowo-Budowlane<br/> Bartosz Marcićkiewicz</h1>
-                <p>E-mail: bartosz.marcickiewicz@gmail.com</p>
-                <p>_______________________________________________</p>
-                <p>REGON:387281200</p>
-                <p>NIP:8172121449</p>
-            </div>
-        </div>
             <!--/. Grid row-->
 
         </div>

@@ -18,7 +18,7 @@ def send_order_enquiry(request):
                 subject,
                 message,
                 'bartosz.marcickiewicz@gmail.com',
-                ['joyiles387@opetron.com'],
+                ['bartosz.marcickiewicz@gmail.com'],
                 fail_silently=False
             )
 
