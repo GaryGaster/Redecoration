@@ -27,3 +27,7 @@ def send_order_enquiry(request):
 def home(request):
     send_order_enquiry(request)
     return render(request, 'main/home.html')
+
+def authors(request):
+    return render(request, 'main/authors.html')
+
