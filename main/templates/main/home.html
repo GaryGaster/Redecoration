@@ -3,113 +3,109 @@
 {% block title %} NA SWOIM | O FIRMIE {% endblock %}
 
 {% block content %}
+<!-- Banner-Section -->
+<div class="gradient"></div>
 
-    <!-- Banner-Section -->
-    <section class="banner">
-        <div class="gradient"></div>
-
-        <!-- Container -->
-        <div class="container h-100 d-flex">
-            <div class="jumbotron my-auto ml-auto" data-aos="fade-right" data-aos-duration="600">
-                <h1>Skontaktuj się z nami</h1>
-                <!-- Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <form method="post">
-                            {% csrf_token %}
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" name='name' placeholder="Imię i/lub nazwisko" required>
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="email" class="form-control" name='email' placeholder="Adres email" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" name='subject' placeholder="Temat (opcjonalnie)">
-                                </div>
-                                <div class="col-sm-6">
-                                    <input type="text" class="form-control" name='number' placeholder="Telefon (opcjonalnie)">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-12">
-                                    <textarea type="text" class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
-                                </div>
-                            </div>
-                            <span>LUB ZADZWOŃ <a href="#">739 972 162</a></span>
-                            <button type="submit" class="btn btn-primary">WYŚLIJ</button><br/>
-                            <input type="checkbox" required>
-                            <small>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych<br/>
-                                w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,<br/>
-                                ale niezbędne do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu<br/>
-                                do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem<br/>
-                                danych osobowych jest firma Usługi remontowo-budowlane Bartosz Marcićkiewicz</small>
-                        </form>
+<!-- Container -->
+<div class="container h-100 d-flex">
+    <div class="jumbotron my-auto ml-auto" data-aos="fade-right" data-aos-duration="600">
+        <h1>Skontaktuj się z nami</h1>
+        <!-- Grid row-->
+        <div class="row">
+            <div class="col-md-12">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name='name' placeholder="Imię i/lub nazwisko" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="email" class="form-control" name='email' placeholder="Adres email" required>
+                        </div>
                     </div>
-                </div>
-                <!--/. Grid row-->
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name='subject' placeholder="Temat (opcjonalnie)">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="text" class="form-control" name='number' placeholder="Telefon (opcjonalnie)">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <textarea type="text" class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
+                        </div>
+                    </div>
+                    <span>LUB ZADZWOŃ <a href="#">739 972 162</a></span>
+                    <button type="submit" class="btn btn-primary">WYŚLIJ</button><br/>
+                    <input type="checkbox" required>
+                    <small>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych<br/>
+                        w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,<br/>
+                        ale niezbędne do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu<br/>
+                        do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem<br/>
+                        danych osobowych jest firma Usługi remontowo-budowlane Bartosz Marcićkiewicz</small>
+                </form>
             </div>
         </div>
-        <!-- /. Container -->
-        </div>
-    </section>
+        <!--/. Grid row-->
+    </div>
+</div>
+<!-- /. Container -->
 
-    <!-- Testimonial-Section -->
-    <section class="testimonial">
-        <div class="gradient"></div>
-        <!-- Container -->
-        <div class="container">
-           <!-- Grid row-->
-            <div class="row">
-                <div class="col-md-6">
-                    <!-- Testimonial Slider from Baamboo Studio modified for The Mentor Group (http://www.mentor-group.com/clients--testimonials.html) -->
+<!-- Testimonial-Section -->
+<section class="testimonial">
+    <div class="gradient"></div>
+    <!-- Container -->
+    <div class="container">
+        <!-- Grid row-->
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Testimonial Slider from Baamboo Studio modified for The Mentor Group (http://www.mentor-group.com/clients--testimonials.html) -->
 
-                    <!-- TestimonialS Slider - Free Weebly Widget by Baamboo Studio - Style 2 -->
-                    <div class="testimonial_slider_2">
-                        <input type="radio" name="slider_2" id="slide_2_1" checked />
-                        <input type="radio" name="slider_2" id="slide_2_2" />
-                        <input type="radio" name="slider_2" id="slide_2_3" />
-                        <input type="radio" name="slider_2" id="slide_2_4" />
-                        <div class="boo_inner clearfix">
-                            <div class="slide_content">
-                                <div class="testimonial_2">
-                                    <div class="content_2">
-                                        <img src="{% static 'images/image-1.jpg'%}" class="d-block w-100" alt="..."></div>
-                                </div>
-                            </div>
-                            <div class="slide_content">
-                                <div class="testimonial_2">
-                                    <div class="content_2">
-                                        <img src="{% static 'images/image-2.jpg'%}" class="d-block w-100" alt="..."></div>
-                                </div>
-                            </div>
-                            <div class="slide_content">
-                                <div class="testimonial_2">
-                                    <div class="content_2">
-                                        <img src="{% static 'images/image-3.jpg'%}" class="d-block w-100" alt="..."></div>
-                                </div>
-                            </div>
-                            <div class="slide_content">
-                                <div class="testimonial_2">
-                                    <div class="content_2">
-                                        <img src="{% static 'images/image-4.jpg'%}" class="d-block w-100" alt="..."></div>
-                                </div>
+                <!-- TestimonialS Slider - Free Weebly Widget by Baamboo Studio - Style 2 -->
+                <div class="testimonial_slider_2">
+                    <input type="radio" name="slider_2" id="slide_2_1" checked />
+                    <input type="radio" name="slider_2" id="slide_2_2" />
+                    <input type="radio" name="slider_2" id="slide_2_3" />
+                    <input type="radio" name="slider_2" id="slide_2_4" />
+                    <div class="boo_inner clearfix">
+                        <div class="slide_content">
+                            <div class="testimonial_2">
+                                <div class="content_2">
+                                    <img src="{% static 'images/image-1.jpg'%}" class="d-block w-100" alt="..."></div>
                             </div>
                         </div>
-                        <div id="controls">
-                            <label for="slide_2_1"></label>
-                            <label for="slide_2_2"></label>
-                            <label for="slide_2_3"></label>
-                            <label for="slide_2_4"></label>
+                        <div class="slide_content">
+                            <div class="testimonial_2">
+                                <div class="content_2">
+                                    <img src="{% static 'images/image-2.jpg'%}" class="d-block w-100" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="slide_content">
+                            <div class="testimonial_2">
+                                <div class="content_2">
+                                    <img src="{% static 'images/image-3.jpg'%}" class="d-block w-100" alt="..."></div>
+                            </div>
+                        </div>
+                        <div class="slide_content">
+                            <div class="testimonial_2">
+                                <div class="content_2">
+                                    <img src="{% static 'images/image-4.jpg'%}" class="d-block w-100" alt="..."></div>
+                            </div>
                         </div>
                     </div>
-
+                    <div id="controls">
+                        <label for="slide_2_1"></label>
+                        <label for="slide_2_2"></label>
+                        <label for="slide_2_3"></label>
+                        <label for="slide_2_4"></label>
+                    </div>
                 </div>
-                <div class="col-md-6 list-of-services">
-                    <h4>Usługi remontowo – budowlane</h4>
-                    <ul>
+
+            </div>
+            <div class="col-md-6 list-of-services">
+                <h4>Usługi remontowo – budowlane</h4>
+                <ul>
                     <li>układanie płytek ceramicznych</li>
                     <li>biały montaż</li>
                     <li>szpachlowanie</li>
@@ -118,11 +114,11 @@
                     <li>prostowanie ścian metodą kartonowo-gipsową</li>
                     <li>sufity podwieszane</li>
                     <li>układanie paneli podłogowych</li>
-                    </ul>
-                </div>
+                </ul>
             </div>
-            <!--/. Grid row-->
         </div>
-        <!-- /. Container -->
-    </section>
+        <!--/. Grid row-->
+    </div>
+    <!-- /. Container -->
+</section>
 {% endblock %}
