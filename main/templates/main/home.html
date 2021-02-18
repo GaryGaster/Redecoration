@@ -4,53 +4,54 @@
 
 {% block content %}
 <!-- Banner-Section -->
-<div class="gradient"></div>
-
-<!-- Container -->
-<div class="container h-100 d-flex">
-    <div class="jumbotron my-auto ml-auto" data-aos="fade-right" data-aos-duration="600">
-        <h1>Skontaktuj się z nami</h1>
-        <!-- Grid row-->
-        <div class="row">
-            <div class="col-md-12">
-                <form method="post">
-                    {% csrf_token %}
-                    <div class="form-group row">
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" name='name' placeholder="Imię i/lub nazwisko" required>
+<section class="banner">
+    <div class="gradient"></div>
+    <!-- Container -->
+    <div class="container h-100 d-flex">
+        <div class="jumbotron my-auto ml-auto" data-aos="fade-right" data-aos-duration="600">
+            <h1>Skontaktuj się z nami</h1>
+            <!-- Grid row-->
+            <div class="row">
+                <div class="col-md-12">
+                    <form method="post">
+                        {% csrf_token %}
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name='name' placeholder="Imię i/lub nazwisko" required>
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="email" class="form-control" name='email' placeholder="Adres email" required>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <input type="email" class="form-control" name='email' placeholder="Adres email" required>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name='subject' placeholder="Temat (opcjonalnie)">
+                            </div>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" name='number' placeholder="Telefon (opcjonalnie)">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" name='subject' placeholder="Temat (opcjonalnie)">
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <textarea class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
+                            </div>
                         </div>
-                        <div class="col-sm-6">
-                            <input type="text" class="form-control" name='number' placeholder="Telefon (opcjonalnie)">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <div class="col-sm-12">
-                            <textarea type="text" class="form-control" name='message' placeholder="Wiadomość" rows="4" required></textarea>
-                        </div>
-                    </div>
-                    <span>LUB ZADZWOŃ <a href="#">739 972 162</a></span>
-                    <button type="submit" class="btn btn-primary">WYŚLIJ</button><br/>
-                    <input type="checkbox" required>
-                    <small>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych<br/>
-                        w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,<br/>
-                        ale niezbędne do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu<br/>
-                        do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem<br/>
-                        danych osobowych jest firma Usługi remontowo-budowlane Bartosz Marcićkiewicz</small>
-                </form>
+                        <span>LUB ZADZWOŃ <a href="#">739 972 162</a></span>
+                        <button type="submit" class="btn btn-primary">WYŚLIJ</button><br/>
+                        <input type="checkbox" required>
+                        <small>Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych osobowych<br/>
+                            w związku z wysłaniem zapytania przez formularz kontaktowy. Podanie danych jest dobrowolne,<br/>
+                            ale niezbędne do przetworzenia zapytania. Zostałem /am poinformowany /a, że przysługuje mi prawo dostępu<br/>
+                            do swoich danych, możliwości ich poprawiania, żądania zaprzestania ich przetwarzania. Administratorem<br/>
+                            danych osobowych jest firma Usługi remontowo-budowlane Bartosz Marcićkiewicz</small>
+                    </form>
+                </div>
             </div>
+            <!--/. Grid row-->
         </div>
-        <!--/. Grid row-->
     </div>
-</div>
-<!-- /. Container -->
+    <!-- /. Container -->
+</section>
 
 <!-- Testimonial-Section -->
 <section class="testimonial">

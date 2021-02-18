@@ -22,30 +22,36 @@
 
 </head>
 
-<!-- Nav-bar -->
-<div class="gradient"></div>
-<!-- Container -->
-<a class="navbar-brand" href="index.html">
-    <img src="{% static 'images/.jpg'%}" alt="">
-</a>
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span><i class="fa fa-align-right" aria-hidden="true"></i></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="{% url 'home' %}">O firmie <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="hidden">/</li>
-            <li class="nav-item">
-                <a class="nav-link" href="{% url 'contact' %}">Kontakt</a>
-            </li>
-        </ul>
-    </div>
-    <!-- /. Container -->
+<header>
+    <!-- Nav-bar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <div class="gradient"></div>
+        <!-- Container -->
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="{% static 'images/.jpg'%}" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa fa-align-right" aria-hidden="true"></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="{% url 'home' %}">O firmie <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="hidden">/</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'contact' %}">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /. Container -->
+    </nav>
+</header>
 
-    {% block content %}{% endblock %}
+
+{% block content %}{% endblock %}
 
 <!-- Footer -->
 <footer class="page-footer">
@@ -96,7 +102,5 @@
 <!-- Custom JavaScript -->
 <script src="{% static 'js/animate.js'%}"></script>
 <script src="{% static 'js/custom.js'%}"></script>
-
-</button>
 
 </html>
